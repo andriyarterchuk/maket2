@@ -1,0 +1,137 @@
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+    body {
+        display: none;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    header h1 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        margin-top: 150px;
+    }
+    header .btn {
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #777879;
+        background: #eff0f2;
+        color: #777879;
+        margin-top: 0px;
+    }
+    img {
+        float: right;
+        margin-top: 0px;
+    }
+    .forXS {
+        margin-top: 50px;
+    }
+    .aboutText {
+        padding-left: 0px;
+    }
+    #works img {
+        margin-bottom: 10px;
+    }
+    #works .row1 {
+        margin-bottom: 0;
+    }
+    #services .row1,
+    #services .row2,
+    #services .row3,
+    #team .row1,
+    #team .row2 {
+        margin-bottom: 0;
+    }
+    #services .serv,
+    #team img {
+        margin-bottom: 10px;
+    }
+    #logo {
+        background-size: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #form .form {
+        margin-top: 20px;
+    }
+    #form .info {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #form {
+        height: 950px;
+    }
+    #form button {
+        margin-left: 70px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+    .forXS {
+        margin-top: 50px;
+    }
+    header h1 {
+        margin-top: 100px;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .forXS {
+        margin-top: 200px;
+    }
+    header h1 {
+        margin-top: 200px;
+    }
+    #works img {
+        margin-bottom: 10px;
+    }
+    #works .row1 {
+        margin-bottom: 0;
+    }
+    #services .row1,
+    #services .row2,
+    #services .row3,
+    #team .row1,
+    #team .row2 {
+        margin-bottom: 0;
+    }
+    #services .serv,
+    #team img {
+        margin-bottom: 10px;
+    }
+    #logo {
+        background-size: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #form .form {
+        margin-top: 20px;
+    }
+    #form .info {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #form {
+        height: 950px;
+    }
+    #form button {
+        margin-left: 70px;
+    }
+    #about .mainimg {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .forXS {
+        margin-top: 200px;
+    }
+    header h1 {
+        margin-top: 200px;
+    }
+    #logo {
+        background-size: 100%;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+}
