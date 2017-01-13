@@ -27,13 +27,28 @@ $(document).ready(function() {
         }
     });
     $("#right").on("click", function() {
-        $(".text1").addClass("hidden");
-        $(".text2").removeClass("hidden");
-
+        if ($(".text1").hasClass("hidden") == false) {
+            $(".text1").addClass("hidden");
+            $(".text2").removeClass("hidden");
+        } else if ($(".text2").hasClass("hidden") == false) {
+            $(".text2").addClass("hidden");
+            $(".text3").removeClass("hidden");
+        } else if ($(".text3").hasClass("hidden") == false) {
+            $(".text3").addClass("hidden");
+            $(".text4").removeClass("hidden");
+        }
     })
     $("#left").on("click", function() {
-        $(".text2").addClass("hidden");
-        $(".text1").removeClass("hidden");
+        if ($(".text2").hasClass("hidden") == false) {
+            $(".text2").addClass("hidden");
+            $(".text1").removeClass("hidden");
+        } else if ($(".text3").hasClass("hidden") == false) {
+            $(".text3").addClass("hidden");
+            $(".text2").removeClass("hidden");
+        } else if ($(".text4").hasClass("hidden") == false) {
+            $(".text4").addClass("hidden");
+            $(".text3").removeClass("hidden");
+        }
 
     })
 
