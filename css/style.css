@@ -372,3 +372,6 @@ footer h2 {
     max-width: none!important;
     background: none!important;
 }
+#says .hidden{
+    display: none;
+}

@@ -26,5 +26,16 @@ $(document).ready(function() {
             }
         }
     });
+    $("#right").on("click", function() {
+        $(".text1").addClass("hidden");
+        $(".text2").removeClass("hidden");
+
+    })
+    $("#left").on("click", function() {
+        $(".text2").addClass("hidden");
+        $(".text1").removeClass("hidden");
+
+    })
+
 
 });
