@@ -36,6 +36,9 @@ $(document).ready(function() {
         } else if ($(".text3").hasClass("hidden") == false) {
             $(".text3").addClass("hidden");
             $(".text4").removeClass("hidden");
+        } else if ($(".text4").hasClass("hidden") == false) {
+            $(".text4").addClass("hidden");
+            $(".text5").removeClass("hidden");
         }
     })
     $("#left").on("click", function() {
@@ -48,9 +51,28 @@ $(document).ready(function() {
         } else if ($(".text4").hasClass("hidden") == false) {
             $(".text4").addClass("hidden");
             $(".text3").removeClass("hidden");
+        } else if ($(".text5").hasClass("hidden") == false) {
+            $(".text5").addClass("hidden");
+            $(".text4").removeClass("hidden");
         }
 
     })
 
+    $(".serv img.1").on("click", function() {
+        /*  var prev= $(this).prev();
+          console.log(prev[0].innerText);*/
+        var parent = this.parentNode.parentNode;
+        parent.classList.add("hidden")
+        parent.nextElementSibling.classList.remove("hidden");
+    })
+    $(".serv img.2").on("click", function() {
+        var parent = this.parentNode;
+        parent.classList.add("hidden")
+        parent.previousElementSibling.classList.remove("hidden");
+    })
 
+
+    $(".team").hover(function() {
+        this.childNodes[1].classList.remove("hidden")
+    })
 })
