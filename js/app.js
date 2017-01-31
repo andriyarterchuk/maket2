@@ -72,7 +72,14 @@ $(document).ready(function() {
     })
 
 
-    $(".team").hover(function() {
+   /* $(".team").hover(function() {
         this.childNodes[1].classList.remove("hidden")
+    })*/
+    $(".team").mouseover(function() {
+        this.childNodes[1].classList.remove("hidden")
+    })
+     $(".team").mouseout(function() {
+
+        this.childNodes[1].classList.add("hidden")
     })
 })
